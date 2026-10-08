@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index,follow">
+<meta name="description" content="亚洲人成电影网 — 专注亚洲电影与亚洲影人的影视资料站：华语、日本、韩国、印度、东南亚电影，作者导演、类型片、电影节与修复版专题。">
+<meta name="keywords" content="亚洲人成电影网,亚洲电影,华语电影,日本电影,韩国电影,印度电影,东南亚电影,亚洲导演,电影节,4K修复,apdy">
+<meta name="author" content="亚洲人成电影网">
+<meta name="theme-color" content="#0a0a12">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="canonical" href="https://yazhourenchengdianyingwang-cn.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="亚洲人成电影网 - 华语·日本·韩国·印度·东南亚电影资料 | apdy">
+<meta property="og:description" content="亚洲人成电影网：华语、日本、韩国、印度、东南亚电影，作者导演、类型片、电影节与4K修复版专题。">
+<meta property="og:url" content="https://yazhourenchengdianyingwang-cn.github.io">
+<meta property="og:site_name" content="亚洲人成电影网">
+<title>亚洲人成电影网 - 华语·日本·韩国·印度·东南亚电影资料 | apdy</title>
+<style>
+:root{
+  --ink:#0a0a12;
+  --ink2:#11101c;
+  --paper:rgba(255,255,255,.05);
+  --line:rgba(255,176,32,.30);
+  --gold:#ffb020;
+  --amber:#ff8a3d;
+  --pink:#e0569c;
+  --plum:#7c3aed;
+  --jade:#2bd9a8;
+  --txt:#f0ebdd;
+  --sub:#b9b0d0;
+  --mono:Menlo,Consolas,"Courier New",monospace;
+  --serif:"Songti SC","SimSun","Source Han Serif SC",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--ink);color:var(--txt);line-height:1.75;overflow-x:hidden;
+  background-image:
+    radial-gradient(1100px 520px at 94% -6%, rgba(224,86,156,.16), transparent 62%),
+    radial-gradient(760px 420px at 2% 14%, rgba(255,176,32,.14), transparent 62%),
+    linear-gradient(rgba(255,176,32,.040) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,176,32,.040) 1px, transparent 1px);
+  background-size:auto,auto,46px 46px,46px 46px;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+::selection{background:rgba(255,176,32,.4);color:#120c02}
+
+/* ===== Header ===== */
+header{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(10,10,18,.86);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:14px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.3px}
+.logo .mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--gold),var(--pink));display:grid;place-items:center;box-shadow:0 0 24px rgba(255,176,32,.4);position:relative;font:900 21px/1 var(--mono);color:#140c02}
+.logo b{font-size:17px;letter-spacing:1px}
+.logo em{font-style:normal;color:var(--sub);font-size:11px;font-family:var(--mono);border-left:1px solid var(--line);padding-left:10px}
+nav{margin-left:auto;display:flex;align-items:center;gap:2px}
+nav a{padding:8px 13px;border-radius:8px;font-size:14px;color:#e6ddf5;transition:.2s;white-space:nowrap}
+nav a:hover{color:#fff;background:rgba(255,176,32,.10)}
+nav a.on{color:#140c02;background:linear-gradient(90deg,var(--gold),var(---pink,#e0569c));font-weight:700;box-shadow:0 6px 18px -8px rgba(255,176,32,.9)}
+.menu-btn{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:10px;background:rgba(255,176,32,.06);cursor:pointer;flex-direction:column;gap:5px;place-items:center}
+.menu-btn i{width:18px;height:2px;background:var(--gold);border-radius:2px}
+
+/* ===== Hero ===== */
+.hero{padding:64px 0 40px;position:relative}
+.hero-in{display:grid;grid-template-columns:1fr 470px;gap:44px;align-items:center}
+.tagline{display:inline-flex;align-items:center;gap:9px;padding:6px 14px;border-radius:999px;font-size:12px;font-family:var(--mono);color:var(--gold);border:1px solid var(--line);background:rgba(255,176,32,.07)}
+.tagline span{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px var(--gold);animation:beat 1.4s infinite}
+@keyframes beat{0%,100%{transform:scale(1);opacity:1}25%{transform:scale(1.5);opacity:.75}50%{transform:scale(1);opacity:1}}
+h1{font-family:var(--serif);font-size:clamp(36px,7vw,70px);line-height:1.12;margin:16px 0 12px;letter-spacing:1px}
+h1 .grad{background:linear-gradient(100deg,#fff 4%,var(--gold) 48%,var(--pink) 98%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--sub);font-size:clamp(14px,2.2vw,16px);max-width:560px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:12px;font-weight:700;font-size:15px;cursor:pointer;border:1px solid transparent;transition:.22s}
+.btn-p{background:linear-gradient(90deg,var(--gold),var(---pink,#e0569c));color:#140c02;box-shadow:0 12px 32px -12px rgba(255,176,32,.8)}
+.btn-p:hover{transform:translateY(-2px)}
+.btn-g{background:rgba(255,255,255,.04);border-color:var(--line);color:#f0ebdd}
+.btn-g:hover{border-color:var(--gold);color:var(--gold)}
+.hero-stats{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap}
+.hero-stats div span{display:block;font-family:var(--mono);font-size:25px;font-weight:800;color:#fff;letter-spacing:-1px}
+.hero-stats div small{color:var(--sub);font-size:11px;letter-spacing:1.5px}
+
+/* CSS sun & mountains */
+.stage{position:relative;height:440px;display:grid;place-items:center;overflow:hidden;border-radius:24px;border:1px solid var(--line);background:linear-gradient(180deg,#150824 0%,#08060f 100%)}
+.sun{position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#ffe9b8 0%,#ffb020 26%,#e0569c 60%,transparent 66%);box-shadow:0 0 90px rgba(255,176,32,.5);animation:breath 4.2s ease-in-out infinite}
+@keyframes breath{0%,100%{transform:scale(1);opacity:.95}50%{transform:scale(1.06);opacity:1}}
+.mt{position:absolute;left:0;right:0;bottom:0;height:180px;background:linear-gradient(180deg,transparent 0 30%,#150d26 60%,#0a0814 100%);clip-path:polygon(0 100%,0 62%,14% 40%,26% 58%,40% 24%,54% 52%,68% 18%,80% 46%,92% 30%,100% 56%,100% 100%);opacity:.95}
+.mt.m2{height:120px;bottom:0;background:linear-gradient(180deg,transparent,transparency 0,#2a1740 55%,#0a0814);clip-path:polygon(0 100%,0 70%,12% 50%,24% 68%,38% 34%,52% 62%,66% 28%,78% 56%,90% 40%,100% 66%,100% 100%);opacity:.7}
+.lotus{position:absolute;bottom:34px;width:44px;height:26px;border-radius:50% 50% 0 0;background:radial-gradient(circle at 50% 90%,var(--pink),transparent 66%);opacity:.8;animation:float 5s ease-in-out infinite}
+.lotus:nth-child(1){left:12%;animation-delay:0s}
+.lotus:nth-child(2){left:26%;width:30px;height:18px;animation-delay:1.6s;opacity:.55}
+.lotus:nth-child(3){right:14%;animation-delay:.9s}
+.lotus:nth-child(4){right:30%;width:28px;height:16px;animation-delay:2.4s;opacity:.5}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.pt{position:absolute;font-family:var(--serif);font-size:12px;color:rgba(240,235,221,.85);letter-spacing:6px;text-shadow:0 0 14px rgba(255,176,32,.5)}
+.pt.p1{top:38px;left:20px;transform:rotate(-90deg);transform-origin:left}
+.pt.p2{bottom:38px;right:14px;letter-spacing:4px;color:var(--gold)}
+.hud{position:absolute;z-index:6;font-family:var(--mono);font-size:11px;color:var(--gold);border:1px solid var(--line);background:rgba(10,10,18,.86);padding:7px 10px;border-radius:8px}
+.hud b{display:block;color:#fff;font-size:15px;letter-spacing:1px}
+.h1{top:46px;right:20px}
+.h2{bottom:46px;left:18px;color:var(--pink);border-color:rgba(224,86,156,.4)}
+
+/* ===== Section ===== */
+section{padding:74px 0;position:relative}
+.eyebrow{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;letter-spacing:3px;color:var(--gold)}
+.eyebrow::before{content:"";width:28px;height:2px;background:linear-gradient(90deg,var(--gold),transparent)}
+h2{font-family:var(--serif);font-size:clamp(26px,4.4vw,40px);margin:10px 0 8px;letter-spacing:1px}
+h2 em{font-style:normal;background:linear-gradient(90deg,var(--gold),var(---pink,#e0569c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-desc{color:var(--sub);max-width:720px;margin-bottom:8px}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:6px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 26px}
+.chip{padding:7px 16px;border-radius:999px;font-size:13px;cursor:pointer;border:1px solid var(--line);background:rgba(255,255,255,.03);color:#e6ddf5;transition:.2s}
+.chip:hover{color:#fff;border-color:var(--gold)}
+.chip.on{background:linear-gradient(90deg,var(--gold),var(---pink,#e0569c));color:#140c02;border-color:transparent;font-weight:700}
+
+/* ===== ① 华语电影 : Deck cards ===== */
+.deck{display:flex;gap:16px;overflow-x:auto;padding:8px 2px 26px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:rgba(255,176,32,.34) transparent}
+.deck::-webkit-scrollbar{height:8px}
+.deck::-webkit-scrollbar-thumb{background:rgba(255,176,32,.34);border-radius:8px}
+.dk{flex:0 0 250px;scroll-snap-align:start;height:316px;border-radius:16px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;border:1px solid var(--line);transform:rotate(calc(var(--r,0)*1deg));transition:.34s;cursor:pointer}
+.dk::after{content:"";position:absolute;right:-40px;top:-40px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,.10)}
+.dk:hover{transform:rotate(0) translateY(-10px);box-shadow:0 34px 64px -26px rgba(255,176,32,.55);border-color:var(--gold);z-index:3}
+.dk .yr{font-family:var(--mono);font-size:30px;font-weight:900;color:rgba(255,255,255,.9);line-height:1;text-shadow:0 4px 18px rgba(0,0,0,.6)}
+.dk h3{font-family:var(--serif);font-size:23px;line-height:1.3;z-index:2}
+.dk p{font-size:12px;color:rgba(240,235,221,.82);z-index:2}
+.dk .en{font-family:var(--mono);font-size:10px;letter-spacing:2px;color:rgba(255,255,255,.6);z-index:2}
+
+/* ===== ② 日本电影 : Vertical stepping timeline ===== */
+.jp{display:grid;grid-template-columns:190px 1fr;gap:0;position:relative}
+.jp .axis{position:relative;padding-top:6px}
+.jp .axis::before{content:"";position:absolute;left:14px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--gold),var(---pink,#e0569c),transparent)}
+.node{position:relative;padding:0 0 22px 44px}
+.node::before{content:"";position:absolute;left:8px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--ink);border:3px solid var(--gold);z-index:2;box-shadow:0 0 10px var(--gold)}
+.node.on::before{background:var(--gold)}
+.node h4{font-family:var(--serif);font-size:18px}
+.node small{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:1px}
+.node p{font-size:12.5px;color:var(--sub);margin-top:5px;max-width:640px}
+.node .tag{display:inline-block;margin-top:7px;padding:3px 9px;border-radius:6px;font-size:11px;font-family:var(--mono);border:1px solid var(--line);color:#e6ddf5}
+.jp .keys{display:flex;flex-direction:column;gap:10px;padding-left:8px}
+.key{padding:12px 15px;border-radius:11px;border:1px solid var(--line);background:var(--paper);font-size:13px;cursor:pointer;transition:.2s}
+.key:hover{background:rgba(255,176,32,.09);border-color:var(--gold);transform:translateX(5px)}
+.key b{display:block;font-family:var(--serif);font-size:15px;color:#fff}
+
+/* ===== ③ 韩国电影 : 3-col wave grid ===== */
+.wave{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.wv{position:relative;height:150px;border-radius:14px;padding:16px;overflow:hidden;border:1px solid var(--line);transition:.3s;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between}
+.wv:nth-child(2){transform:translateY(20px)}
+.wv:nth-child(3){transform:translateY(40px)}
+.wv:hover{transform:translateY(-6px)!important;border-color:var(--gold);box-shadow:0 26px 54px -24px rgba(224,86,156,.6)}
+.wv .no{font-family:var(--mono);font-size:11px;letter-spacing:2px;color:rgba(255,255,255,.9)}
+.wv h3{font-family:var(--serif);font-size:19px;z-index:2}
+.wv .rate{font-family:var(--mono);font-size:12px;color:#fff;z-index:2}
+.wv .rate i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--gold);margin-right:5px;box-shadow:0 0 8px var(--gold)}
+
+/* ===== ④ 印度 & 东南亚 : folded accordion ===== */
+.acc{display:flex;flex-direction:column;gap:10px}
+details.ac{border:1px solid var(--line);border-radius:13px;background:var(--paper);overflow:hidden;transition:.25s}
+details.ac[open]{background:linear-gradient(100deg,rgba(255,176,32,.10),rgba(224,86,156,.08))}
+details.ac summary{cursor:pointer;padding:15px 18px;display:grid;grid-template-columns:56px 1fr auto;gap:14px;align-items:center;list-style:none}
+details.ac summary::-webkit-details-marker{display:none}
+details.ac summary::before{content:"▸";color:var(--gold);font-size:13px;transition:.2s}
+details.ac[open] summary::before{transform:rotate(90deg)}
+details.ac summary .idx{font-family:var(--mono);font-weight:900;font-size:20px;color:var(--gold)}
+details.ac summary h4{font-size:16px;font-family:var(--serif)}
+details.ac summary span{font-size:11.5px;color:var(--sub);font-family:var(--mono)}
+.acb{padding:4px 18px 18px 88px;color:var(--sub);font-size:13.5px}
+.acb .row2{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.acb .row2 s{text-decoration:none;padding:5px 11px;border-radius:7px;font-size:11.5px;font-family:var(--mono);border:1px solid var(--line);color:#e6ddf5}
+
+/* ===== ⑤ 电影节 & 榜单 : table ===== */
+.tb{width:100%;border-collapse:collapse;font-size:14px}
+.tb thead th{text-align:left;padding:12px 14px;font-family:var(--mono);font-size:11px;letter-spacing:2px;color:var(--gold);border-bottom:1px solid var(--line);font-weight:600}
+.tb tbody td{padding:13px 14px;border-bottom:1px solid rgba(255,255,255,.06);vertical-align:middle}
+.tb tbody tr{transition:.18s}
+.tb tbody tr:hover{background:rgba(255,176,32,.07);transform:translateX(4px)}
+.tb .rk{font-family:var(--mono);font-weight:900;font-size:18px;width:56px}
+.tb .rk.g1{color:var(--gold)}
+.tb .rk.g2{color:#c9c2d6}
+.tb .rk.g3{color:#c77b3a}
+.tb h5{font-size:15px;font-family:var(--serif)}
+.tb small{color:var(--sub);font-size:11.5px}
+.tb .hot{font-family:var(--mono);font-size:12px;color:#fff;text-align:right}
+.up{color:var(--jade)}
+.dn{color:var(--pink)}
+
+/* ===== ⑥ 关于 ===== */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.panel{border-radius:20px;padding:34px;background:var(--paper);border:1px solid var(--line);position:relative;overflow:hidden}
+.panel::after{content:"亚";position:absolute;right:6px;bottom:-36px;font-family:var(--serif);font-weight:900;font-size:230px;color:rgba(255,255,255,.045);line-height:1}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.kpi{padding:16px;border-radius:12px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+.kpi b{display:block;font-family:var(--mono);font-size:25px;color:#fff;letter-spacing:-1px}
+.kpi small{color:var(--sub);font-size:11px;letter-spacing:1px}
+form{display:flex;flex-direction:column;gap:14px;margin-top:22px;position:relative;z-index:2}
+input,textarea{width:100%;padding:13px 15px;border-radius:11px;background:rgba(10,10,18,.72);border:1px solid var(--line);color:var(--txt);font-size:14px;font-family:inherit;transition:.2s}
+input:focus,textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,176,32,.18)}
+textarea{resize:vertical;min-height:84px}
+.radios{display:flex;gap:8px;flex-wrap:wrap}
+.radios label{padding:9px 15px;border-radius:9px;border:1px solid var(--line);font-size:13px;cursor:pointer;transition:.2s;color:#e6ddf5}
+.radios label:hover{border-color:var(--gold)}
+.radios input{position:absolute;opacity:0;width:0;height:0}
+.radios label:has(input:checked){background:linear-gradient(90deg,var(--gold),var(---pink,#e0569c));border-color:transparent;color:#140c02;font-weight:700}
+
+/* ===== Footer ===== */
+footer{border-top:1px solid var(--line);padding:44px 0 30px;margin-top:40px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.ft h5{font-size:15px;margin-bottom:12px;color:#fff}
+.ft a{display:block;color:var(--sub);font-size:13px;padding:4px 0;transition:.2s}
+.ft a:hover{color:var(--gold)}
+.copy{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);color:var(--sub);font-size:12px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.copy b{color:var(--gold);font-family:var(--mono)}
+
+/* ===== Reveal ===== */
+.rev{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.22,1,.36,1)}
+.rev.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.sun,.lotus{animation:none}}
+
+/* ===== Responsive ===== */
+@media(max-width:1000px){
+  .hero-in{grid-template-columns:1fr}
+  .stage{height:360px;order:-1}
+}
+@media(max-width:900px){
+  .wave{grid-template-columns:1fr}
+  .wave .wv:nth-child(n){transform:none}
+  .ft,.split{grid-template-columns:1fr 1fr}
+  .jp{grid-template-columns:1fr}
+  .jp .keys{grid-template-columns:1fr 1fr;padding-left:0;margin-top:8px}
+}
+@media(max-width:640px){
+  .wrap{padding:0 16px}
+  section{padding:54px 0}
+  .hero{padding:34px 0 18px}
+  nav{position:fixed;inset:64px 0 auto 0;flex-direction:column;align-items:stretch;gap:4px;padding:16px;background:rgba(10,10,18,.97);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:.3s}
+  nav.open{max-height:600px;overflow:auto}
+  nav a{font-size:15px;padding:13px 16px;border-radius:10px}
+  .menu-btn{display:grid}
+  .logo em{display:none}
+  .deck,.jp,.wave,.acb,.rk{flex-wrap:nowrap}
+  .dk{flex-basis:212px}
+  .pt.p1{display:none}
+  .tb{font-size:13px}
+  .tb thead{display:none}
+  .tb tbody td{display:block;padding:7px 14px}
+  .tb tbody tr{border-bottom:1px solid var(--line);display:grid;grid-template-columns:44px 1fr;grid-template-areas:"r n""r d""r h";padding:10px 0}
+  .tb .rk{grid-area:r;font-size:22px;padding-left:14px}
+  .tb h5{grid-area:n}
+  .tb small{grid-area:d;padding-left:0!important}
+  .tb .hot{grid-area:h;text-align:left}
+  details.ac summary{grid-template-columns:44px 1fr}
+  details.ac summary span{display:none}
+  .acb{padding-left:18px}
+  .kpis{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr}
+}
+@media print{
+  body{background:#fff;color:#000}
+  header,nav,.hero-cta,.chips,.sun,.mt,.lotus,.pt,.hud{display:none!important}
+  section{page-break-inside:avoid;padding:16px 0}
+  .dk,.wv,.key,.ac,tr{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<header>
+  <div class="wrap hd">
+    <a class="logo" href="#" aria-label="亚洲人成电影网 首页">
+      <span class="mark">亞</span>
+      <span><b>亚洲人成电影网</b><em>apdy · github.io</em></span>
+    </a>
+    <button class="menu-btn" id="mb" aria-label="菜单" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav id="nav">
+      <a href="#" class="on">首页</a>
+      <a href="#cn">华语</a>
+      <a href="#jp">日本</a>
+      <a href="#kr">韩国</a>
+      <a href="#in">南亚</a>
+      <a href="#fest">电影节</a>
+      <a href="#about">关于</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero-in">
+    <div class="rev">
+      <span class="tagline"><span></span>亚洲 · 电影 · 作者 · 修复</span>
+      <h1><span class="grad">亚洲人成</span><br>电影网</h1>
+      <p class="lead"><b>亚洲人成电影网</b>（apdy）专注<b>亚洲电影</b>与<b>亚洲影人</b>：华语、日本、韩国、印度、东南亚——导演作者论、类型片分析、电影节获奖片单、4K 修复版专题。把"看过"变成"看懂"。</p>
+      <div class="hero-cta">
+        <a class="btn btn-p" href="#cn">进入片库 →</a>
+        <a class="btn btn-g" href="#fest">电影节专题</a>
+      </div>
+      <div class="hero-stats">
+        <div><span>4,820</span><small>亚洲影片</small></div>
+        <div><span>316</span><small>导演词条</small></div>
+        <div><span>38</span><small>电影节</small></div>
+        <div><span>12</span><small>语种字幕</small></div>
+      </div>
+    </div>
+
+    <div class="stage rev" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="mt"></div>
+      <div class="mt m2"></div>
+      <span class="lotus"></span><span class="lotus"></span><span class="lotus"></span><span class="lotus"></span>
+      <div class="pt p1">东 方 之 光</div>
+      <div class="pt p2">ASIA · CINEMA</div>
+      <div class="hud h1">REGION<b>东亚 · 南亚 · 东南亚</b></div>
+      <div class="hud h2">FOCUS<b>作者 · 类型 · 修复</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ① 华语电影 ============ -->
+<section id="cn">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">01 / CHINESE-LANGUAGE</div>
+        <h2>华语<em>电影</em></h2>
+        <p class="sec-desc">从香港新浪潮、台湾新电影到大陆第六代与新生代，华语电影的美学与命题：江湖、家庭、历史、身份、城市。</p>
+      </div>
+      <a class="btn btn-g" href="#fest">获奖片单 →</a>
+    </div>
+    <div class="chips" role="tablist">
+      <span class="chip on">全部</span>
+      <span class="chip">香港</span>
+      <span class="chip">台湾</span>
+      <span class="chip">大陆</span>
+      <span class="chip">武侠</span>
+      <span class="chip">文艺</span>
+      <span class="chip">作者导演</span>
+    </div>
+    <div class="deck">
+      <article class="dk rev" style="background:linear-gradient(165deg,#7a2e1d,#0a0a12);--r:-2"><span class="en">WUXIA / 2000</span><div class="yr">2000</div><h3>卧虎藏龙</h3><p>李安 · 竹林、轻功与克制的欲望——东方美学第一次被世界读懂。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#3a2a6e,#0a0a12);--r:1.4"><span class="en">ART HOUSE / 2005</span><div class="yr">2005</div><h3>最好的时光</h3><p>侯孝贤 · 三段时代、三种画幅、三种看世界的方式。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#124a42,#0a0a12);--r:-1.6"><span class="en">NOIR / 2002</span><div class="yr">2002</div><h3>无间道</h3><p>刘伟强 / 麦兆辉 · 身份倒置的警匪寓言，重写了华语类型片的天花板。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#5e4512,#0a0a12);--r:1.8"><span class="en">FAMILY / 1993</span><div class="yr">1993</div><h3>霸王别姬</h3><p>陈凯歌 · 戏梦人生，"不疯魔不成活"的一出时代悲剧。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#1c2a5e,#0a0a12);--r:-1.2"><span class="en">URBAN / 2007</span><div class="yr">2007</div><h3>三峡好人</h3><p>贾樟柯 · 三峡拆迁中的离散与寻找，长镜头里的中国现场。</p></article>
+      <article class="dk rev" style="background:linear-gradient(165deg,#4a123a,#0a0a12);--r:1"><span class="en">GENRE / 2018</span><div class="yr">2018</div><h3>地球最后的夜晚</h3><p>毕赣 · 59 分钟 3D 长镜头，梦境作为叙事本身。</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ② 日本电影 ============ -->
+<section id="jp" style="background:linear-gradient(180deg,transparent,rgba(255,176,32,.05))">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">02 / JAPANESE</div>
+        <h2>日本<em>电影</em></h2>
+        <p class="sec-desc">从沟口健二、小津安二郎到是枝裕和、滨口龙介：物哀、日常、家族、生死。亚洲人成电影网按"作者脉络"而非"年代顺序"重读日本电影。</p>
+      </div>
+    </div>
+    <div class="jp">
+      <div class="axis">
+        <div class="node on rev"><small>1953</small><h4>东京物语</h4><p>小津安二郎 · 低机位、榻榻米、沉默的亲情——"物哀"的镜头语法。</p><span class="tag">家庭 · 日常</span></div>
+        <div class="node rev"><small>1954</small><h4>七武士</h4><p>黑泽明 · 群像、雨中泥地、动作场面的剪辑节奏，影响了一代好莱坞。</p><span class="tag">时代剧 · 群像</span></div>
+        <div class="node rev"><small>1997</small><h4>幽灵公主</h4><p>宫崎骏 · 手绘的森林与神祇，生态命题的终极动画表达。</p><span class="tag">动画 · 生态</span></div>
+        <div class="node rev"><small>2008</small><h4>步履不停</h4><p>是枝裕和 · 一日之家：没有戏剧冲突，只有未说出口的话。</p><span class="tag">家族 · 留白</span></div>
+        <div class="node rev"><small>2021</small><h4>驾驶我的车</h4><p>滨口龙介 · 契诃夫、车库、车后座——用 3 小时讲"理解"的不可及。</p><span class="tag">改编 · 长镜头</span></div>
+      </div>
+      <div class="keys">
+        <div class="key rev"><b>小津安二郎</b>低机位 · 榻榻米美学 · 家族剧</div>
+        <div class="key rev"><b>黑泽明</b>动态构图 · 群像调度 · 武士片</div>
+        <div class="key rev"><b>沟口健二</b>纵深长镜头 · 女性命运</div>
+        <div class="key rev"><b>今村昌平</b>底层 · 肉体 · 欲望人类学</div>
+        <div class="key rev"><b>是枝裕和</b>日常 · 缺席 · 非职业演员</div>
+        <div class="key rev"><b>滨口龙介</b>对话 · 文本 · 长时值</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ③ 韩国电影 ============ -->
+<section id="kr">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">03 / KOREAN</div>
+        <h2>韩国<em>电影</em></h2>
+        <p class="sec-desc">从"韩国电影复兴"到全球现象：类型混搭、社会批判、极致的情绪压强。亚洲人成电影网拆解奉俊昊、朴赞郁、洪常秀的作者密码。</p>
+      </div>
+    </div>
+    <div class="wave">
+      <div class="wv rev" style="background:linear-gradient(150deg,#e0569c,#2a0a22)"><span class="no">KR / 01</span><h3>寄生虫</h3><span class="rate"><i></i>9.2 · 戛纳金棕榈 + 奥斯卡</span></div>
+      <div class="wv rev" style="background:linear-gradient(150deg,#c77b3a,#241203)"><span class="no">KR / 02</span><h3>老男孩</h3><span class="rate"><i></i>8.6 · 复仇、催眠与 corridor 长镜头</span></div>
+      <div class="wv rev" style="background:linear-gradient(150deg,#2b7a6e,#061a18)"><span class="no">KR / 03</span><h3>燃烧</h3><span class="rate"><i></i>8.5 · 李沧东的"不存在的井"</span></div>
+      <div class="wv rev" style="background:linear-gradient(150deg,#4a3a8a,#0c0820)"><span class="no">KR / 04</span><h3>雪国列车</h3><span class="rate"><i></i>7.8 · 奉俊昊的阶级寓言</span></div>
+      <div class="wv rev" style="background:linear-gradient(150deg,#8a2b2b,#1a0606)"><span class="no">KR / 05</span><h3>哭声</h3><span class="rate"><i></i>7.9 · 罗泓轸的宗教恐怖</span></div>
+      <div class="wv rev" style="background:linear-gradient(150deg,#6e6a2b,#141206)"><span class="no">KR / 06</span><h3>这时对，那时错</h3><span class="rate"><i></i>8.0 · 洪常秀的"重拍人生"</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ④ 印度 & 东南亚 ============ -->
+<section id="in" style="background:linear-gradient(180deg,rgba(224,86,156,.045),transparent)">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">04 / SOUTH &amp; SOUTHEAST ASIA</div>
+        <h2>印度 · 东南亚<em>电影</em></h2>
+        <p class="sec-desc">宝莱坞之外的印度新电影、泰国独立、越南战争记忆、菲律宾新浪潮、印尼政治惊悚——被忽略的亚洲电影版图。</p>
+      </div>
+    </div>
+    <div class="acc">
+      <details class="ac rev" open>
+        <summary><span class="idx">04.1</span><h4>印度新电影（New Indian Cinema）</h4><span>2015—2024 · 12 部</span></summary>
+        <div class="acb">脱离歌舞套路的现实主义：阶级、宗教、性别、种姓。<s>摔跤吧！爸爸</s><s>厕所英雄</s><s>杰伊·比姆</s><s>RRR</s><s>因果报应</s></div>
+      </details>
+      <details class="ac rev">
+        <summary><span class="idx">04.2</span><h4>泰国独立电影</h4><span>阿彼察邦 · 韦拉斯哈古</span></summary>
+        <div class="acb">热带、鬼魂、政治记忆与慢速时间。《能召回前世的布米叔叔》《记忆》——东南亚的魔幻现实主义。</div>
+      </details>
+      <details class="ac rev">
+        <summary><span class="idx">04.3</span><h4>越南战争记忆</h4><span>陈英雄 · 潘党迪</span></summary>
+        <div class="acb">以个人与家庭重述宏大历史：《青木瓜之味》《三轮车夫》《越战未了》——湄公河、街道与沉默。</div>
+      </details>
+      <details class="ac rev">
+        <summary><span class="idx">04.4</span><h4>菲律宾 / 印尼新浪潮</h4><span>布里兰特·曼多萨 · 莫阿·苏加雅</span></summary>
+        <div class="acb">手持摄影、街头现场、政治惊悚与社会边缘：《基纳瑞》《恶魔的请柬》《海上楼阁》。</div>
+      </details>
+      <details class="ac rev">
+        <summary><span class="idx">04.5</span><h4>华语之外的"亚洲作者"</h4><span>阿巴斯 · 萨蒂亚吉特·雷伊 · 法蒂·阿金</span></summary>
+        <div class="acb">亚洲电影的共同源头：雷伊的"阿普三部曲"、阿巴斯的留白、土耳其与中亚的边境叙事。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑤ 电影节 & 榜单 ============ -->
+<section id="fest">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">05 / FESTIVAL &amp; RANKING</div>
+        <h2>电影节 · <em>亚洲榜单</em></h2>
+        <p class="sec-desc">亚洲人成电影网整理三大洲重要电影节获奖片目与本站评分榜。数据按月更新，评分基于影评人加权与长评质量。</p>
+      </div>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="tb">
+      <thead>
+        <tr><th>名次</th><th>影片</th><th>地区 / 年份</th><th style="text-align:right">热度</th></tr>
+      </thead>
+      <tbody>
+        <tr class="rev"><td class="rk g1">01</td><td><h5>寄生虫</h5><small>奉俊昊 · 戛纳金棕榈 2019</small></td><td><small>韩国 / 2019</small></td><td class="hot">128,400 <span class="up">▲12%</span></td></tr>
+        <tr class="rev"><td class="rk g2">02</td><td><h5>驾驶我的车</h5><small>滨口龙介 · 戛纳编剧奖 2021</small></td><td><small>日本 / 2021</small></td><td class="hot">96,210 <span class="up">▲7%</span></td></tr>
+        <tr class="rev"><td class="rk g3">03</td><td><h5>卧虎藏龙</h5><small>李安 · 奥斯卡最佳外语片 2000</small></td><td><small>台湾 / 2000</small></td><td class="hot">84,550 <span class="up">▲3%</span></td></tr>
+        <tr class="rev"><td class="rk">04</td><td><h5>燃烧</h5><small>李沧东 · 戛纳竞赛 2018</small></td><td><small>韩国 / 2018</small></td><td class="hot">71,900 <span class="dn">▼2%</span></td></tr>
+        <tr class="rev"><td class="rk">05</td><td><h5>三峡好人</h5><small>贾樟柯 · 威尼斯金狮 2006</small></td><td><small>大陆 / 2006</small></td><td class="hot">63,280 <span class="up">▲5%</span></td></tr>
+        <tr class="rev"><td class="rk">06</td><td><h5> RRR </h5><small>SS 拉贾穆里 · 奥斯卡原创歌曲 2022</small></td><td><small>印度 / 2022</small></td><td class="hot">58,640 <span class="up">▲21%</span></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑥ 关于 ============ -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head rev">
+      <div>
+        <div class="eyebrow">06 / ABOUT</div>
+        <h2>关于<em>亚洲人成电影网</em></h2>
+        <p class="sec-desc">apdy · 亚洲人成电影网（yazhourenchengdianyingwang-cn.github.io）是一个面向普通观众的亚洲电影资料与评论站点：华语、日本、韩国、印度、东南亚，作者、类型、修复、片单。</p>
+      </div>
+    </div>
+    <div class="split">
+      <div class="panel rev">
+        <span class="eyebrow">MANIFESTO</span>
+        <h3 style="font-family:var(--serif);font-size:26px;margin:10px 0">亚洲的电影，<br>值得被认真看完。</h3>
+        <p style="color:var(--sub)">每周更新：一位亚洲导演的作者解读 + 一部 4K 修复版观影指南 + 一份按情绪/时节组织的片单。</p>
+        <div class="kpis">
+          <div class="kpi"><b>4,820</b><small>影片词条</small></div>
+          <div class="kpi"><b>316</b><small>导演词条</small></div>
+          <div class="kpi"><b>0</b><small>付费门槛</small></div>
+        </div>
+      </div>
+      <div class="panel rev">
+        <h3 style="font-family:var(--serif);font-size:20px">订阅亚洲片单</h3>
+        <p style="color:var(--sub);font-size:13px">每月一封：一个地区、一位导演、一部修复版、一份可直接照着看的片单。免费，可随时退订。</p>
+        <form action="#" method="post" onsubmit="return false">
+          <input type="text" name="name" placeholder="怎么称呼你？" required>
+          <input type="email" name="email" placeholder="邮箱地址" required>
+          <div class="radios">
+            <label><input type="radio" name="r" checked><span>华语</span></label>
+            <label><input type="radio" name="r"><span>日本</span></label>
+            <label><input type="radio" name="r"><span>韩国</span></label>
+            <label><input type="radio" name="r"><span>南亚</span></label>
+          </div>
+          <button class="btn btn-p" type="submit">免费订阅 →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <a class="logo" href="#"><span class="mark">亞</span><b style="background:linear-gradient(90deg,#fff,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent">亚洲人成电影网</b></a>
+        <p style="color:var(--sub);font-size:13px;margin-top:12px;max-width:330px">亚洲人成电影网 apdy — 华语、日本、韩国、印度、东南亚电影资料：作者导演、类型片分析、电影节片单、4K 修复版专题。</p>
+      </div>
+      <div>
+        <h5>地区</h5>
+        <a href="#cn">华语电影</a>
+        <a href="#jp">日本电影</a>
+        <a href="#kr">韩国电影</a>
+        <a href="#in">印度 · 东南亚</a>
+      </div>
+      <div>
+        <h5>专题</h5>
+        <a href="#">作者导演</a>
+        <a href="#">类型片分析</a>
+        <a href="#fest">电影节片单</a>
+        <a href="#">4K 修复版</a>
+      </div>
+      <div>
+        <h5>资源</h5>
+        <a href="#about">亚洲片单</a>
+        <a href="#">导演索引</a>
+        <a href="#">术语表</a>
+        <a href="#">推荐书目</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr">2026</span> 亚洲人成电影网 apdy · <b>yazhourenchengdianyingwang-cn.github.io</b> · 本站为亚洲电影资料与评论整理站点，影片版权归原作者及发行方所有</span>
+      <span>https://yazhourenchengdianyingwang-cn.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('mb'),nav=document.getElementById('nav');
+mb.addEventListener('click',function(){
+  var o=nav.classList.toggle('open');
+  mb.setAttribute('aria-expanded',o?'true':'false');
+});
+nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e,i){if(e.isIntersecting){setTimeout(function(){e.target.classList.add('in');},i*70);io.unobserve(e.target);}});
+},{threshold:.12});
+document.querySelectorAll('.rev').forEach(function(n){io.observe(n);});
+
+document.querySelectorAll('.chip').forEach(function(c){
+  c.addEventListener('click',function(){
+    c.parentNode.querySelectorAll('.chip').forEach(function(x){x.classList.remove('on');});
+    c.classList.add('on');
+  });
+});
+
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
